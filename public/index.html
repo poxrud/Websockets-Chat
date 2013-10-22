@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+
+<head>
+   <title>Simple WebSocket Chat: by Phil Oxrud</title>
+   <link rel="stylesheet" type="text/css" href="/style.css" media="all" />
+</head>
+
+<body>
+  <h1>Simple WebSocket Chat: by Phil Oxrud</h1>
+  <p><a href="">Source code on github</a></p>
+
+  <section id="username">
+    <input id="user" type="text" placeholder="Enter Username"></input>
+    <button id="enter-chat-button">ENTER CHAT</button>
+  </section>
+
+  <section id="chatroom" class="is-disabled">
+    <p id="connection-status">Connection Status: Not Connected</p>
+
+    <textarea id="chat-window" readonly="true"></textarea>
+    
+
+    <textarea id='users-list' readonly="true"></textarea>
+    
+    <input id="message" type="text" placeholder= "Type Your Message Here" disabled="true"></input>
+  </section>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/application.js"></script>
+</body>  
+</html>

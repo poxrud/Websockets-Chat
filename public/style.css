@@ -1,0 +1,118 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
+}
+
+body, input, select {
+  font-size: 16px;
+}
+
+/* state classes */
+.is-enabled {
+  display: visible;
+}
+
+.is-disabled {
+  display: none;
+}
+/***********/
+
+
+#username > input, #username > button {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2em;
+}
+
+#username > input {
+  width: 10em;
+
+  text-align: center;
+}
+
+
+#username > button {
+  margin-top: 2em;
+}
+
+textarea, input {
+  outline: none;
+}
+
+textarea {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 1em;
+  resize: none;
+}
+
+
+#chatroom {
+  height: 15em;
+}
+
+#chat-window {
+  position: relative;
+  float: left;
+  margin-bottom: 0;
+  
+  padding-bottom:0 ;
+  width: 70%;
+  height:100%;
+  border:0;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+#users-list {
+  float:right;
+  width: 30%;
+  height: 100%;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+
+#message {
+  margin-top: 0;
+  margin-bottom: 1em;
+  padding: 0.5em;
+  width: 100%;
+  border: 1px solid #ccc;
+}
+
+
+/* DESKTOP / TABLET */
+
+@media screen and (min-width: 696px) {
+  
+  #username {
+    font-size: 2em;
+  }
+
+  #chat-window {
+    width: 80%;
+  }
+
+  #users-list {
+    width: 20%;
+  }
+
+  #username > input {
+    width: 10em;
+  }
+
+  #chatroom {
+    height: 20em;
+  }
+
+}
