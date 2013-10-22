@@ -8,6 +8,9 @@ This is my solution to the [HTML5 Challenge 2](http://outofcomfortzone.net/2013/
 This is a websockets based chat server and web client. WebSockets are implemented using [socket.io](http://socket.io/).
 The backend is running on Node.js with socket.io.   
 
+## Live Example running on Heroku
+[http://websocketschat.herokuapp.com](http://websocketschat.herokuapp.com)
+
 
 ## Installation and Usage
 

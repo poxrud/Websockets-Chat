@@ -4,7 +4,7 @@ var app = express();
 app.use("/", express.static(__dirname + '/public'));
 
 
-var io = require('socket.io').listen(app.listen(3001));
+var io = require('socket.io').listen(app.listen(process.env.PORT || 3001));
 
 var users = {};
 
